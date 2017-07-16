@@ -56,7 +56,6 @@ class ProposalsController < ApplicationController
 
     relevance = [
       { "wishes_count" => { "order": "desc" } },
-      { "banner_id" => { order: "desc" } },
       { "usd_price" => { order: "asc" } }
     ]
     sort = []
@@ -114,20 +113,19 @@ class ProposalsController < ApplicationController
                   :fields => ["title^2", "description", "artist.name^3", "tags.name", "style.name^2"]
                 }
               ],
-              "filter": filter_terms
+              "post_filter": filter_terms
             }
           }
         }
       else
         {
-          "filter": {
+          "post_filter": {
             "bool": {
               "must": filter_terms
             }
           }
         }
       end.merge(sorting_rules)
-
   end
 
   def find_proposal

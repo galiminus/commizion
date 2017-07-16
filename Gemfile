@@ -119,10 +119,10 @@ gem 'money'
 gem 'google_currency'
 
 # full text search
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
-gem 'elasticsearch-persistence'
-gem 'elasticsearch-dsl'
+gem 'elasticsearch-model', '~> 5.0.1'
+gem 'elasticsearch-rails', '~> 5.0.1'
+gem 'elasticsearch-persistence', '~> 5.0.1'
+gem 'elasticsearch-dsl', '~> 0.1.5'
 
 # Tags
 gem 'acts-as-taggable-on', '~> 4.0'

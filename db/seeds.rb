@@ -73,8 +73,8 @@ end
   "one_month",
   "two_months",
   "more_than_two_months"
-].each do |key|
-  Delay.find_or_create_by(key: key)
+].each.with_index do |key, rank|
+  Delay.find_or_create_by(key: key, rank: rank)
 end
 
 users = User.all.to_a
