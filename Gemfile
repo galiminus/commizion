@@ -31,12 +31,6 @@ group :development do
   gem "letter_opener"
 
   gem "bullet"
-
-  gem 'capistrano',         require: false
-  gem 'capistrano-rails',   require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-foreman', github: 'phorque/capistrano-foreman'
-  gem 'capistrano-figaro'
 end
 
 # generate fake data
