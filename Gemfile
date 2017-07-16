@@ -47,7 +47,7 @@ gem 'omniauth-twitter'
 gem 'pundit', '~> 1.0.1'
 
 # Pagination
-gem 'kaminari', branch: '0-17-stable'
+gem 'kaminari'#, branch: '0-17-stable'
 
 # admin interface
 gem 'activeadmin', github: 'activeadmin/activeadmin'
